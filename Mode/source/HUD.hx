@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxG;
 import flixel.group.FlxGroup;
 import flixel.text.FlxText;
 
@@ -9,7 +10,8 @@ class HUD extends FlxGroup{
     
     public function new(){
         super();
-        _score = new FlxText(5, 5, 0, "Score: 000");
+        _score = new FlxText(0, 0, 0, "Score: 000");
+        _score.y = FlxG.height / 2 - _score.height / 2;
         add(_score);
     }
 

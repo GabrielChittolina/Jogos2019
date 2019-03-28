@@ -1,7 +1,5 @@
 package;
 
-import flixel.*;
-
 class Mensagem{
     public static inline var OP_DANO:Int = 0;
     public static inline var OP_CURA:Int = 1;
@@ -12,6 +10,5 @@ class Mensagem{
     public var op:Int;
 
     public function new(){
-
     }
 }

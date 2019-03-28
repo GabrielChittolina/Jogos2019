@@ -1,5 +1,7 @@
 package;
 
+import flixel.FlxSprite;
+
 class Bala extends FlxSprite {
     public function new() {
         super();
