@@ -10,8 +10,8 @@ class HUD extends FlxGroup{
     
     public function new(){
         super();
-        _score = new FlxText(0, 0, 0, "Score: 000");
-        _score.y = FlxG.height / 2 - _score.height / 2;
+        _score = new FlxText(0, 0, 0, "Enemy Lives: 000");
+        _score.y = FlxG.height - _score.height;
         add(_score);
     }
 

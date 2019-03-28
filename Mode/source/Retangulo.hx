@@ -1,5 +1,6 @@
 package;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 
 class Retangulo extends FlxSprite {
@@ -7,5 +8,9 @@ class Retangulo extends FlxSprite {
         super();
         this.makeGraphic(w, h, c);
         this.health = 10;
+    }
+
+    public function onMessage(m:Mensagem):Void {
+        FlxG.log.add("Personagem msg, op = " + m.op);
     }
 }

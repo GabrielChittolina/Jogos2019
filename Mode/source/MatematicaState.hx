@@ -1,5 +1,6 @@
 package;
 
+import flixel.system.FlxAssets;
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.group.FlxGroup;
@@ -49,7 +50,18 @@ class MatematicaState extends FlxState {
                 b.reset(_cannon.x + (_cannon.width - b.width) / 2, _cannon.y);
                 b.velocity.x = _velocity.x;
                 b.velocity.y = _velocity.y;
+                b.color = FlxG.random.color();
             }
+        }
+
+        if(FlxG.keys.justPressed.SPACE){
+            var m:Mensagem = new Mensagem();
+            m.from = _cannon;
+            m.to = _retInimigo;
+            m.op = Mensagem.OP_DANO;
+            m.data = 1;
+            _correio.send(m);
+            FlxG.sound.play(FlxAssets.getSound("assets/sounds/hit"), 0.5);
         }
 
         super.update(elapsed);
