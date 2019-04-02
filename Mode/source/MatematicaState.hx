@@ -50,7 +50,6 @@ class MatematicaState extends FlxState {
                 b.reset(_cannon.x + (_cannon.width - b.width) / 2, _cannon.y);
                 b.velocity.x = _velocity.x;
                 b.velocity.y = _velocity.y;
-                b.color = FlxG.random.color();
             }
         }
 
