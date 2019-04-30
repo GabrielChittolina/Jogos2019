@@ -15,8 +15,9 @@ class Main extends Sprite
 		//addChild(new FlxGame(320, 240, MeuMenuState));
 		//addChild(new FlxGame(320, 240, UpdateState));
 		//addChild(new FlxGame(320, 240, ColisaoState));
-		addChild(new FlxGame(320, 240, MatematicaState));
+		// addChild(new FlxGame(320, 240, MatematicaState));
 		//addChild(new FlxGame(320, 240, ArteState));
 		//addChild(new FlxGame(320, 240, CaminhoState));
+		addChild(new FlxGame(320, 240, IaState));
 	}
 }
