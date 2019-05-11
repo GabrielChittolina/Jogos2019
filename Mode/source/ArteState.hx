@@ -15,6 +15,7 @@ class ArteState extends FlxState {
         _sprite.loadGraphic(AssetPaths.nudeman__png, true, 16);
         _sprite.setFacingFlip(FlxObject.LEFT, true, false);
         _sprite.setFacingFlip(FlxObject.RIGHT, false, false);
+        _sprite.facing = LEFT;
 
         _sprite.animation.add("walkD", [0, 1, 2, 3, 4], 8);
         _sprite.animation.add("walkU", [0, 3, 2, 4], 8);
